@@ -1,9 +1,18 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Components/Navbar";
+import { Poppins } from 'next/font/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap', // or 'auto', 'block', 'fallback', 'optional'
+  variable: '--font-poppins', // A CSS variable name to reference the font
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // Specify desired weights
 });
 
 const geistMono = Geist_Mono({
@@ -20,8 +29,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable}`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
