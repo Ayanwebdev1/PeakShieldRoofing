@@ -10,7 +10,7 @@ const Privacy = () => {
         Privacy <span className="text-green-500">Policy</span>
       </h1>
 
-      <div className="max-w-[60vw] space-y-8 text-lg">
+      <div className="w-[90vw] md:max-w-[60vw] space-y-8 text-lg">
         <p>
           At <span className="text-green-500 font-semibold">Peak Shield Roofing</span>, your privacy is not just a requirement—it’s a commitment. We understand that when you share personal information with us, you trust us to handle it with care. This policy explains what data we collect, how we use it, and the steps we take to protect your privacy. Our goal is to provide complete transparency and peace of mind.
         </p>

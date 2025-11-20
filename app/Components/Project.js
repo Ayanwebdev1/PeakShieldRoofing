@@ -47,26 +47,26 @@ const Project = () => {
 
             <section className='mt-[50px]'>
                 <h1 className='text-[35px] text-center font-bold'>Transformations That <span className='text-green-500'>Speak</span> for Themselves</h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>See the difference our team makes with every project. From worn-out roofs to fully restored, safe, and beautiful homes, our before-and-after gallery showcases the quality, precision, and care that Peak Shield Roofing brings to each job. These transformations highlight our commitment to protecting your home and family.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>See the difference our team makes with every project. From worn-out roofs to fully restored, safe, and beautiful homes, our before-and-after gallery showcases the quality, precision, and care that Peak Shield Roofing brings to each job. These transformations highlight our commitment to protecting your home and family.</p>
 
                 <Beforeaftergallery />
             </section>
 
             <section className='mt-[50px]'>
                 <h1 className='text-[35px] text-center font-bold'>Ongoing <span className='text-green-500'>Projects</span></h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>Our team is constantly at work, transforming homes across Texas with precision and care. These ongoing projects show the dedication, skill, and attention to detail we bring to every roof, ensuring every home is protected and improved while the work is in progress.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Our team is constantly at work, transforming homes across Texas with precision and care. These ongoing projects show the dedication, skill, and attention to detail we bring to every roof, ensuring every home is protected and improved while the work is in progress.</p>
                 <Scrollgallery />
             </section>
 
             <section className='mt-[50px]'>
                 <h1 className='text-[35px] text-center font-bold'>Completed <span className='text-green-500'>Projects</span></h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>From roof repairs to full replacements, our completed projects showcase the quality, craftsmanship, and reliability that Peak Shield Roofing stands for. Each transformation reflects our commitment to protecting homes and delivering results that our clients trust and admire.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>From roof repairs to full replacements, our completed projects showcase the quality, craftsmanship, and reliability that Peak Shield Roofing stands for. Each transformation reflects our commitment to protecting homes and delivering results that our clients trust and admire.</p>
                 <CompGallery />
             </section>
 
             <section className='mt-[50px]'>
                 <h1 className='text-[35px] text-center font-bold'>Hear From Our <span className='text-green-500'>Happy</span> Homeowners</h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>Nothing speaks louder than the words of those we’ve served. Our clients share their experiences working with Peak Shield Roofing — from initial consultation to the final nail — highlighting our professionalism, quality, and dedication to protecting their homes. These testimonials reflect the trust and satisfaction we aim to deliver on every project.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Nothing speaks louder than the words of those we’ve served. Our clients share their experiences working with Peak Shield Roofing — from initial consultation to the final nail — highlighting our professionalism, quality, and dedication to protecting their homes. These testimonials reflect the trust and satisfaction we aim to deliver on every project.</p>
                 <div className="reviwcards flex-wrap flex-col md:flex-row flex justify-center mt-[50px] gap-5 mb-5">
 
                     <div className="rcard w-[90vw] m-auto md:m-0
@@ -98,11 +98,11 @@ const Project = () => {
 
             <section className='mt-[50px]'>
                 <h1 className='text-[35px] text-center font-bold'>Ready to <span className='text-green-500'>Upgrade</span> Your Roof?</h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>Don’t wait until small issues turn into big problems. Our skilled team at Peak Shield Roofing is ready to assess your home, provide expert solutions, and deliver a roof that protects your family and adds lasting value. Let’s make your next roofing project stress-free and reliable.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Don’t wait until small issues turn into big problems. Our skilled team at Peak Shield Roofing is ready to assess your home, provide expert solutions, and deliver a roof that protects your family and adds lasting value. Let’s make your next roofing project stress-free and reliable.</p>
                 <div className='flex justify-center gap-5 items-center mb-5'>
-                    <button className="bg-green-600 px-8 py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
+                    <button className="bg-green-600 px-5 py-3  md:px-8 md:py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
 
-                    <Link href="/getaquote"><button className='px-8 py-4 bg-gray-200 text-black rounded-xl hover:scale-105 transition ease-in-out cursor-pointer mt-5'>Get A Free Quote</button></Link>
+                    <Link href="/getaquote"><button className=' px-5 py-3 md:px-8 md:py-4 bg-gray-200 text-black rounded-xl hover:scale-105 transition ease-in-out cursor-pointer mt-5'>Get A Free Quote</button></Link>
                 </div>
             </section>
             </FadeUp>

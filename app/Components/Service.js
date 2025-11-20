@@ -23,18 +23,18 @@ const Service = () => {
 
     <section>
         <h1 className='text-center text-[35px] font-bold mt-[50px]'>Our Roofing <span className='text-green-500'>Roofing</span> You Can Rely On</h1>
-        <p className='w-[60vw] m-auto text-center mt-3 mb-5'>At Peak Shield Roofing, we don’t just fix roofs — we protect homes and families. Every service we offer is backed by years of hands-on experience, skilled technicians, and a commitment to quality. Whether it’s a repair, replacement, or inspection, we treat every project with care, precision, and respect for your home.</p>
+        <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3 mb-5'>At Peak Shield Roofing, we don’t just fix roofs — we protect homes and families. Every service we offer is backed by years of hands-on experience, skilled technicians, and a commitment to quality. Whether it’s a repair, replacement, or inspection, we treat every project with care, precision, and respect for your home.</p>
         <Servicescards />
     </section>
     <section className='mt-[50px]'>
         <h1 className='text-[35px] text-center font-bold'>See Our Work <span className='text-green-500'>Transforms</span> Homes</h1>
-        <p className='w-[60vw] m-auto text-center mt-3'>Every roof tells a story. From worn-out and damaged to fully restored, our before-and-after gallery shows the care and precision we bring to every project. These real transformations highlight our commitment to quality and the trust homeowners place in Peak Shield Roofing.</p>
+        <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Every roof tells a story. From worn-out and damaged to fully restored, our before-and-after gallery shows the care and precision we bring to every project. These real transformations highlight our commitment to quality and the trust homeowners place in Peak Shield Roofing.</p>
         <Beforeaftergallery />
     </section>
 
     <section className='mt-[50px]'>
         <h1 className='text-[35px] font-bold text-center'>Why <span className='text-green-500'>Choose</span> Us</h1>
-        <p className='w-[60vw] m-auto text-center mt-3'>At Peak Shield Roofing, we combine experience, skill, and care in every project. With a dedicated team of over 10 technicians and 100+ successful roofing projects across Texas, we focus on quality, reliability, and protecting what matters most—your home and family. When you choose us, you’re choosing a team that treats every roof like it’s our own.</p>
+        <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>At Peak Shield Roofing, we combine experience, skill, and care in every project. With a dedicated team of over 10 technicians and 100+ successful roofing projects across Texas, we focus on quality, reliability, and protecting what matters most—your home and family. When you choose us, you’re choosing a team that treats every roof like it’s our own.</p>
         <div className="chooseuscards flex flex-col md:flex-row md:flex-wrap mt-5 md:justify-center gap-5  ">
                             <div className="card max-w-[80vw] m-auto md:m-0 md:w-[25vw] md:h-[45vh]  border border-gray-200 bg-gray-100 rounded-xl hover:scale-105 transition duration-100 ease-in-out cursor-pointer ">
                                 <Image className="m-auto" width={100} height={35} alt="trust" src="/trust.webp"></Image>
@@ -65,7 +65,7 @@ const Service = () => {
     </section>
     <section>
         <h1 className='text-[35px] font-bold text-center mt-[50px]'>What Our <span className='text-green-500'>Clients</span> Say About Us</h1>
-        <p className='w-[60vw] m-auto text-center mt-3'>We take pride in the trust homeowners place in us. From emergency repairs to full roof replacements, our clients appreciate the care, professionalism, and attention to detail we bring to every project. Their words reflect the commitment and reliability that define Peak Shield Roofing.</p>
+        <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>We take pride in the trust homeowners place in us. From emergency repairs to full roof replacements, our clients appreciate the care, professionalism, and attention to detail we bring to every project. Their words reflect the commitment and reliability that define Peak Shield Roofing.</p>
          <div className="reviwcards flex-wrap flex-col md:flex-row flex justify-center mt-[50px] gap-5 mb-5">
 
                     <div className="rcard w-[90vw] m-auto md:m-0

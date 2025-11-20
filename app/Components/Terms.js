@@ -10,7 +10,7 @@ const Terms = () => {
         Terms & <span className="text-green-500">Conditions</span>
       </h1>
 
-      <div className="max-w-[60vw] space-y-8 text-lg">
+      <div className="w-[90vw] md:max-w-[60vw] space-y-8 text-lg">
         <p>
           By accessing or using the website and services provided by <span className="text-green-500 font-semibold">Peak Shield Roofing</span>, you agree to comply with these Terms & Conditions. These terms ensure clarity, accountability, and fairness for both our clients and our team. By continuing to engage with our services, you acknowledge your understanding and acceptance of these rules.
         </p>

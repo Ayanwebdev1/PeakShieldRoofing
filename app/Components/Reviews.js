@@ -10,7 +10,7 @@ const Reviews = () => {
     <FadeUp>
     <header>
       <h1 className='text-[35px] font-bold text-center mt-[50px]'>What Our <span className='text-green-500'>Customers</span> Say</h1>
-      <p className='w-[60vw] m-auto text-center mt-3'>Real experiences from homeowners who trusted Peak Shield Roofing with their most important investment — their home.</p>
+      <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Real experiences from homeowners who trusted Peak Shield Roofing with their most important investment — their home.</p>
     </header>
 
     <section>
@@ -78,36 +78,55 @@ const Reviews = () => {
 
     <section>
       <h1 className='text-[35px] text-center font-bold mt-[70px]'>Real Results We’re <span className='text-green-500'>Proud</span> Of</h1>
-      <p className='w-[60vw] m-auto text-center mt-3'>Every project tells a story — of a home protected, a family made safer, and a job done with care. Here are a few of the transformations our team has proudly completed.</p>
+      <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Every project tells a story — of a home protected, a family made safer, and a job done with care. Here are a few of the transformations our team has proudly completed.</p>
       <Beforeaftergallery />
     </section>
 
-<section className="flex justify-around mt-[50px] items-center">
-                <div className="left">
-                    <Image className="w-[500px] h-[400px]" width={500} height={500} alt="House" src="/Chooseus.webp"></Image>
 
+
+            <section className="flex flex-col md:flex-row justify-center md:justify-around items-center mt-12 px-5 md:px-10 gap-8">
+              {/* Left Image */}
+              <div className="left flex-shrink-0">
+                <Image
+                  className="w-full max-w-[500px] h-auto rounded"
+                  width={500}
+                  height={400}
+                  alt="House"
+                  src="/Chooseus.webp"
+                />
+              </div>
+            
+              {/* Right Text */}
+              <div className="right max-w-[600px] text-center md:text-left">
+                <h1 className="text-[28px] sm:text-[32px] md:text-[35px] font-semibold mb-2">
+                  Why Work With Peak Shield Roofing?
+                </h1>
+                <h2 className="mt-2 font-bold text-[14px] sm:text-[15px] mb-3">
+                  We create roofs that last for years.
+                </h2>
+                <p className="mb-4 text-base sm:text-lg">
+                  At Peak Shield Roofing, we don’t just fix roofs — we protect homes, families, and peace of mind. Every project is handled with care, precision, and dedication, ensuring lasting results. Our team combines years of experience with a personal touch, making sure you feel confident, supported, and worry-free from start to finish.
+                </p>
+            
+                <ul className="list-disc marker:text-green-600 text-left mb-4 pl-5">
+                  <li>Over 10 years of trusted experience</li>
+                  <li>15+ certified technicians</li>
+                  <li>500+ successful roofing projects completed</li>
+                  <li>Transparent pricing with no hidden costs</li>
+                </ul>
+            
+                <div className="flex justify-center md:justify-start">
+                  <button className="bg-green-600 px-8 py-3 rounded-xl text-white font-semibold hover:scale-105 transition ease-in-out cursor-pointer">
+                    <a href="tel:+19283283629">Call Now</a>
+                  </button>
                 </div>
-                <div className="right">
-                    <h1 className="text-[35px] font-semibold w-[40vw]">Why Work With Peak Shield Roofing?</h1>
-                    <h1 className="mt-4 font-bold text-[15px]">We create roofs that lasts for years.</h1>
-                    <p className="mt-3 w-[50vw]">At Peak Shield Roofing, we don’t just fix roofs — we protect homes, families, and peace of mind. Every project is handled with care, precision, and dedication, ensuring lasting results. Our team combines years of experience with a personal touch, making sure you feel confident, supported, and worry-free from start to finish.</p>
-
-                    <ul className="ml-15 mt-5">
-                        <li className="list-disc marker:text-green-600">Over 10 years of trusted experience</li>
-                        <li className="list-disc marker:text-green-600">15+ certified technicians</li>
-                        <li className="list-disc marker:text-green-600">500+ successful roofing projects completed</li>
-                        <li className="list-disc marker:text-green-600">Transparent pricing with no hidden costs</li>
-                    </ul>
-                                <div className="flex justify-center">
-                <button className="bg-green-600 px-9 py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
-
-            </div>
-                </div>
+              </div>
             </section>
+            
 
             <section>
               <h1 className='text-[35px] text-center font-bold mt-[50px]'>Ready to Join Our <span className='text-green-500'>Satisfied</span> Homeowners?</h1>
-              <p className='w-[60vw] m-auto text-center mt-3'>Your home deserves the same level of care and craftsmanship our customers trust us for. If you’re ready for quality work, we’re here to help — with honesty, speed, and real expertise.</p>
+              <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Your home deserves the same level of care and craftsmanship our customers trust us for. If you’re ready for quality work, we’re here to help — with honesty, speed, and real expertise.</p>
               <div className='flex justify-center mt-5 mb-5'>
                 <Link href="/getaquote"><button className="bg-gray-200 px-4 py-4 rounded-xl hover:scale-105 transition ease-in-out cursor-pointer ">Get A Free Estimate</button></Link>
               </div>

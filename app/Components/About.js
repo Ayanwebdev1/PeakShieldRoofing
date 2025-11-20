@@ -29,16 +29,16 @@ const About = () => {
                         At Peak Shield Roofing, we’ve been safeguarding homes and families across Texas for over a decade. Our team of skilled technicians combines experience, precision, and dedication to deliver roofing solutions that last. From inspections to full replacements, every project is handled with care, honesty, and professionalism.
                     </p>
                     <div className='flex gap-5'>
-                        <button className='px-8 py-5 bg-green-600 text-white font-bold rounded-xl hover:scale-105 hover:bg-green-700 transition ease-in-out cursor-pointer mt-5'><a href="tel:+19283283629">Call Now</a></button>
+                        <button className='px-5 py-4 md:px-8 md:py-5 bg-green-600 text-white font-bold rounded-xl hover:scale-105 hover:bg-green-700 transition ease-in-out cursor-pointer mt-5'><a href="tel:+19283283629">Call Now</a></button>
 
-                        <Link href="/getaquote"><button className='px-8 py-5 bg-white text-black font-bold rounded-xl hover:scale-105 transition ease-in-out cursor-pointer mt-5'>Get A Free Quote</button></Link>
+                        <Link href="/getaquote"><button className='px-5 py-4 md:px-8 md:py-5 bg-white text-black font-bold rounded-xl hover:scale-105 transition ease-in-out cursor-pointer mt-5'>Get A Free Quote</button></Link>
                     </div>
                 </div>
             </header>
 
             <section>
                 <h1 className='text-[35px] font-bold text-center mt-[50px]'>About <span className='text-green-500 '>Peak</span> Shield Roofing</h1>
-                <p className='w-[60vw] text-center m-auto mt-5'>At Peak Shield Roofing, we believe a roof isn’t just a structure — it’s security, comfort, and peace of mind for the people who live under it. That’s why our work has always been personal. Since day one, our mission has been simple: <span className='font-semibold'>protect every home as if it were our own.</span>
+                <p className='w-[90vw] md:w-[60vw] text-center m-auto mt-5'>At Peak Shield Roofing, we believe a roof isn’t just a structure — it’s security, comfort, and peace of mind for the people who live under it. That’s why our work has always been personal. Since day one, our mission has been simple: <span className='font-semibold'>protect every home as if it were our own.</span>
 
                     Over the years, our team has grown, our tools have improved, and our experience has expanded — but our values haven’t changed. We show up on time, we do the job right, and we never leave a homeowner confused or stressed. When we say we care, we mean it.
 
@@ -47,49 +47,70 @@ const About = () => {
                     Peak Shield Roofing wasn’t built to be the biggest company — it was built to be the most reliable. And that’s exactly what we aim to prove with every single roof we touch.</p>
             </section>
 
-            <section className='flex items-center mt-[50px]'>
-                <div className="left m-10 mt-15">
-                    <Image width={500} height={500} alt='House' src="/Houses.webp"></Image>
+            
+ <section className="flex flex-col md:flex-row items-center md:items-start mt-[50px]">
+  {/* Left Image */}
+  <div className="left m-0 md:m-10 flex justify-center w-full md:w-auto">
+    <Image
+      width={500}
+      height={500}
+      className="w-full md:w-[500px] h-auto"
+      alt="House"
+      src="/Houses.webp"
+    />
+  </div>
 
-                </div>
-                <div className="right">
-                    <h1 className='font-bold text-[30px] text-center'>Our <span className='text-green-500'>Story</span></h1>
-                    <p className='w-[50vw] mt-5 text-center'>Every roofing company has tools.
-                        <span className='font-semibold'>What makes us different is why we picked them up.</span>
+  {/* Right Text */}
+  <div className="right mt-5 md:mt-0 md:ml-10 flex flex-col items-center md:text-center w-full md:w-auto">
+    <h1 className="font-bold text-[30px] text-center md:text-left">
+      Our <span className="text-green-500">Story</span>
+    </h1>
 
-                        Peak Shield Roofing started with a simple promise:
-                        No homeowner should ever feel unsafe inside their own home.
+    <p className="w-[90vw] md:w-[50vw] mt-5 text-center md:text-left">
+      Every roofing company has tools. 
+      <span className="font-semibold">What makes us different is why we picked them up.</span>
 
-                        Back in 2013, we were just a small crew doing small jobs — fixing leaks, patching damaged shingles, helping families after storms. But one thing became clear very quickly: people didn’t just need repairs… <span className='font-semibold'>they needed someone they could trust.</span>
+      Peak Shield Roofing started with a simple promise:
+      No homeowner should ever feel unsafe inside their own home.
 
-                        So instead of chasing numbers, we focused on relationships.
-                        One home at a time.
-                        One family at a time.
-                        One honest job at a time.
+      Back in 2013, we were just a small crew doing small jobs — fixing leaks, patching damaged shingles, helping families after storms. But one thing became clear very quickly: people didn’t just need repairs… 
+      <span className="font-semibold">they needed someone they could trust.</span>
 
-                        Word spread.
-                        Not because we advertised — but because homeowners felt cared for.
+      So instead of chasing numbers, we focused on relationships.
+      One home at a time.
+      One family at a time.
+      One honest job at a time.
 
-                        Today, with <span className='font-semibold'>10+ skilled technicians and 500+ projects completed across Texas, our mission is still the same:
-                            Protect every home like it’s our own.</span>
+      Word spread.
+      Not because we advertised — but because homeowners felt cared for.
 
-                        When we step onto a roof, we’re not just installing materials —
-                        we’re rebuilding comfort, security, and peace of mind.
+      Today, with <span className="font-semibold">10+ skilled technicians and 500+ projects completed across Texas, our mission is still the same: Protect every home like it’s our own.</span>
 
-                        This is our story.
-                        And if you choose us, it becomes part of yours too.</p>
-                    <div className='flex justify-center mt-5'>
-                        <Link href="/contact"><button className='px-6 py-4 rounded-xl bg-green-600 text-white hover:scale-105 transition ease-in-out cursor-pointer'>Contact Us</button></Link>
-                    </div>
+      When we step onto a roof, we’re not just installing materials —
+      we’re rebuilding comfort, security, and peace of mind.
 
-                </div>
+      This is our story.
+      And if you choose us, it becomes part of yours too.
+    </p>
 
-            </section>
+    <div className="flex justify-center mt-5">
+      <Link href="/contact">
+        <button className="px-6 py-4 rounded-xl bg-green-600 text-white hover:scale-105 transition ease-in-out cursor-pointer">
+          Contact Us
+        </button>
+      </Link>
+    </div>
+  </div>
+</section>
+
+
+            
+            
 
             <section className='mt-[60px] '>
                 <h1 className='text-[35px] text-center font-bold'>Why <span className='text-green-500'>Homeowners</span> Trust Us</h1>
 
-                <p className='text-center w-[60vw] m-auto mt-5 mb-8'>
+                <p className='text-center w-[90vw] md:w-[60vw] m-auto mt-5 mb-8'>
                     Homeowners choose Peak Shield Roofing because we treat every roof like it’s our own. With a team of skilled technicians, years of hands-on experience, and a commitment to honesty, transparency, and quality, we make sure every project is done right the first time. From emergency repairs to full replacements, our clients know they can rely on us for timely, professional, and dependable service — because protecting your home is more than a job, it’s a promise.
                 </p>
                 <div className="chooseuscards flex flex-col md:flex-row md:flex-wrap mt-5 md:justify-center gap-5  ">
@@ -169,19 +190,19 @@ const About = () => {
             <section className='mt-[50px]'>
 
                 <h1 className='text-[35px] font-bold text-center'>See the <span className='text-green-500'>Difference</span>: Before <span className='text-green-500'>&</span> After</h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>Every roof tells a story — and we let the results speak for themselves. From worn-out shingles to fully restored roofs, our before-and-after gallery showcases the skill, care, and precision we bring to every project. These transformations aren’t just improvements in appearance — they’re lasting protection for homes and peace of mind for families.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Every roof tells a story — and we let the results speak for themselves. From worn-out shingles to fully restored roofs, our before-and-after gallery showcases the skill, care, and precision we bring to every project. These transformations aren’t just improvements in appearance — they’re lasting protection for homes and peace of mind for families.</p>
                 <Beforeaftergallery />
             </section>
 
             <section>
                 <h1 className='text-center font-bold text-[35px] mt-[50px]'>Ready to <span className='text-green-500'>Protect</span> Your Home?</h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>Don’t wait until small issues become costly problems. With Peak Shield Roofing, you get skilled technicians, honest advice, and quality work that lasts. Let us give your home the protection it deserves — fast, reliable, and stress-free.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Don’t wait until small issues become costly problems. With Peak Shield Roofing, you get skilled technicians, honest advice, and quality work that lasts. Let us give your home the protection it deserves — fast, reliable, and stress-free.</p>
 
-                <div className='flex justify-center gap-5 items-center mb-5'>
-                    <button className="bg-green-600 px-9 py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
+                    <div className='flex gap-5 items-center justify-center mb-5'>
+                        <button className='px-5 py-4 md:px-8 md:py-5 bg-green-600 text-white font-bold rounded-xl hover:scale-105 hover:bg-green-700 transition ease-in-out cursor-pointer mt-5'><a href="tel:+19283283629">Call Now</a></button>
 
-                    <Link href="/getaquote"><button className='px-8 py-4 bg-gray-200 text-black font-bold rounded-xl hover:scale-105 transition ease-in-out cursor-pointer mt-5'>Get A Free Quote</button></Link>
-                </div>
+                        <Link href="/getaquote"><button className='px-5 py-4 md:px-8 md:py-5 bg-gray-200 text-black font-bold rounded-xl hover:scale-105 transition ease-in-out cursor-pointer mt-5'>Get A Free Quote</button></Link>
+                    </div>
             </section>
             </FadeUp>
         </>

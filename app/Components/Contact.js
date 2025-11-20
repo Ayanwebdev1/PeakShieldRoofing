@@ -12,7 +12,7 @@ export default function ContactPage() {
         
             <header>
                 <h1 className="text-[35px] font-bold text-center mt-[50px]">Get in <span className="text-green-500">Touch</span> With Our <span className="text-green-500">Roofing</span> Experts</h1>
-                <p className="text-[20px] text-center mt-3 w-[85vw] md:w-[60vw] m-auto">Fast responses. Honest answers. Real support</p>
+                <p className="text-[20px] text-center mt-3 w-[90vw] md:w-[60vw] m-auto">Fast responses. Honest answers. Real support</p>
 
             </header>
             <section className="w-full bg-gray-50 py-20">

@@ -10,7 +10,7 @@ const Warranty = () => {
         Warranty <span className="text-green-500">Policy</span>
       </h1>
 
-      <div className="max-w-[60vw] space-y-8 text-lg">
+      <div className="w-[90vw] md:max-w-[60vw] space-y-8 text-lg">
         <p>
           At <span className="text-green-500 font-semibold">Peak Shield Roofing</span>, we take immense pride in the quality of our work. Every roofing project is completed with care, expertise, and attention to detail, which is why we offer a comprehensive warranty to ensure your peace of mind.
         </p>

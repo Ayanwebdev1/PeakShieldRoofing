@@ -185,7 +185,7 @@ export default function GetQuoteForm() {
             <section className='mt-[60px] '>
                 <h1 className='text-[35px] text-center font-bold'>Why <span className='text-green-500'>Homeowners</span> Trust Us</h1>
 
-                <p className='text-center w-[60vw] m-auto mt-5 mb-8'>
+                <p className='text-center w-[90vw] md:w-[60vw] m-auto mt-5 mb-8'>
                     Homeowners choose Peak Shield Roofing because we treat every roof like it’s our own. With a team of skilled technicians, years of hands-on experience, and a commitment to honesty, transparency, and quality, we make sure every project is done right the first time. From emergency repairs to full replacements, our clients know they can rely on us for timely, professional, and dependable service — because protecting your home is more than a job, it’s a promise.
                 </p>
                 <div className="chooseuscards flex flex-col md:flex-row md:flex-wrap mt-5 md:justify-center gap-5  ">
@@ -225,7 +225,7 @@ export default function GetQuoteForm() {
                         How It <span className="text-green-500">Works</span>
                     </h2>
 
-                    <p className="text-center text-gray-600 max-w-[60vw] mx-auto mb-14">
+                    <p className="text-center text-gray-600 w-[90vw] md:max-w-[60vw] mx-auto mb-14">
                         A quick, simple, and transparent process designed to make your experience stress-free.
                     </p>
 
@@ -263,20 +263,20 @@ export default function GetQuoteForm() {
             <Faqs />
             <section>
                 <h1 className='text-[35px] text-center font-bold mt-[50px]'>Prefer to <span className='text-green-500'>contact</span> us via call or email?</h1>
-                <p className='w-[60vw] m-auto text-center mt-3'>Choose the method that’s easiest for you. Whether it’s a quick call for urgent needs or an email with details, our team is ready to assist and provide your free quote promptly.</p>
+                <p className='w-[90vw] md:w-[60vw] m-auto text-center mt-3'>Choose the method that’s easiest for you. Whether it’s a quick call for urgent needs or an email with details, our team is ready to assist and provide your free quote promptly.</p>
 
 
             <div className='flex justify-center items-center gap-5
             mb-5
             '>
-                <button className="bg-green-600 px-9 py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
+                <button className="bg-green-600 px-5 py-3 md:px-9 md:py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
             
 
             <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=ayan@ayankhalid.dev&su=Roofing%20Inquiry&body=Hi,%20I%20want%20to%20know%20more%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 text-black font-semibold mt-4 px-9 py-4 rounded-xl inline-block text-center hover:bg-gray-100 hover:scale-105 transition ease-in-out cursor-pointer"
+                className="bg-gray-200 text-black font-semibold mt-4 px-5 py-3 md:px-9 md:py-4 rounded-xl inline-block text-center hover:bg-gray-100 hover:scale-105 transition ease-in-out cursor-pointer"
             >
                 Email Us
             </a>
