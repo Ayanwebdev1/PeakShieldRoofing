@@ -13,13 +13,13 @@ import Link from "next/link";
 
 // Static + safe components
 import Servicescards from "./Servicescards";
+import FadeUp from "./FadeUp"; 
 
 // Lazy load heavy components
 import dynamic from "next/dynamic";
 const Scrollgallery = dynamic(() => import("./Scrollonggallery"), { ssr: false });
 const Faqs = dynamic(() => import("./Faqs"), { ssr: false });
 const RoofingForm = dynamic(() => import("./Formspree"), { ssr: false });
-const FadeUp = dynamic(() => import("./FadeUp"), { ssr: false });
 const Hero = () => {
     return (
         <>
