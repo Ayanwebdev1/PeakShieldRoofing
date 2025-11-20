@@ -48,7 +48,7 @@ export default function Beforeaftergallery() {
           onClick={() => scroll("left")}
           className="absolute left-0 top-1/2 -translate-y-1/2 bg-green-600 hover:bg-green-700 cursor-pointer text-white p-3 rounded-full z-10 shadow-md"
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft aria-label="Scroll Left" size={24} />
         </button>
 
         {/* Scrollable Logos */}
@@ -77,7 +77,7 @@ export default function Beforeaftergallery() {
           onClick={() => scroll("right")}
           className="absolute right-0 top-1/2 -translate-y-1/2 bg-green-600 hover:bg-green-700 text-white p-3 rounded-full z-10 shadow-md cursor-pointer"
         >
-          <ChevronRight size={24} />
+          <ChevronRight aria-label="Scroll Right" size={24} />
         </button>
       </div>
     </section>

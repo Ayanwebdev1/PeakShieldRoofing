@@ -28,10 +28,12 @@ const Hero = () => {
 
                     {/* Hero Image */}
                     <Image
-                        src="/hero.webp"
+                        src="/hero3.webp"
                         alt="Roofing Hero"
-                        fill
-                        className="object-cover"
+                        // fill
+                        height={2000}
+                        width={1200}
+                        className="w-full h-[95vh] object-cover"
                         priority
                     />
 
