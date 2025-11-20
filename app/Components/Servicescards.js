@@ -27,7 +27,7 @@ const Servicescards = () => {
                     <p className="text-black/70 mt-2 text-center">When storms hit or sudden leaks appear, every minute matters. Our emergency team responds fast to stop the damage, protect your home, and provide temporary or permanent solutions. No waiting, no excuses — just quick, reliable help when you need it most.</p></Link>
                 </div>
                 <div className="w-[30%] mt-5 border p-2 border-gray-200 rounded-xl cursor-pointer hover:scale-105 transition ease-in-out">
-                    <Link href="/getaquote"><Image className="w-[400px] h-[250px] m-auto rounded-xl cursor-pointer" width={300} height={300} alt="Image" src="/Inspection2.webp"></Image>
+                    <Link href="/getaquote"><Image className="w-[400px] h-[250px] m-auto rounded-xl cursor-pointer" width={300} height={300} alt="Image" src="/inspection2.webp"></Image>
                     <h1 className="text-black text-center font-semibold text-[25px]">Roof Inspection</h1>
                     <p className="text-black/70 mt-2 text-center">Our thorough roof inspections help identify potential issues before they turn into costly problems. From minor leaks to structural concerns, we assess every detail and provide you with a clear, honest report so you can make informed decisions for your home’s safety and longevity.</p></Link>
                 </div>

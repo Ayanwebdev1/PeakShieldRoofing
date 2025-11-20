@@ -36,7 +36,7 @@ const Hero = () => {
                     <div className="flex gap-5">
 
                         <a
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=ayankhalid4447@gmail.com&su=Roofing%20Inquiry&body=Hi,%20I%20want%20to%20know%20more%20about%20your%20services."
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=ayan@ayankhalid.dev&su=Roofing%20Inquiry&body=Hi,%20I%20want%20to%20know%20more%20about%20your%20services."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white text-black font-semibold px-9 py-4 rounded-md inline-block text-center hover:bg-gray-100 transition"
