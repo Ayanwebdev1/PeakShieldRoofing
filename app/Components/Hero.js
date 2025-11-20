@@ -1,9 +1,15 @@
 import React from "react";
 import Image from "next/image";
-
+import Servicescards from "./Servicescards";
+import Scrollgallery from "./Scrollonggallery";
+import Link from "next/link";
+import Faqs from "./Faqs";
+import RoofingForm from "./Formspree";
+import FadeUp from "./FadeUp";
 const Hero = () => {
     return (
         <>
+        <FadeUp>
             <header className="relative w-full h-[95vh]">
 
                 {/* Hero Image */}
@@ -51,7 +57,8 @@ const Hero = () => {
             <section>
                 <div className="flex items-center">
                     <div className="left">
-                        <Image className=" m-10 mt-15" src="/Houses.webp" width={550} height={500} alt="House"></Image>
+                        <Image className=" m-10 mt-15 object-cover" src="/Houses.webp" width={550} height={500} alt="House"></Image>
+
 
                     </div>
                     <div className="right">
@@ -63,39 +70,68 @@ const Hero = () => {
                 </div>
             </section>
 
-            <section className="relative w-full h-full mt-5">
-                <Image
-                    className="w-full h-full object-cover"
-                    width={500}
-                    height={500}
-                    alt="Services"
-                    src="/Services1.webp"
-                />
+            <section className=" mt-4">
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/50"></div>
-
-                <div className="absolute inset-0 flex flex-col mt-20 text-center px-5">
-                    <h1 className="text-[35px] font-bold text-white mb-3 ">
-                        Our Roofing Services
+                <div className=" flex flex-col mt-20 text-center px-5">
+                    <h1 className="text-[35px] font-bold text-black mb-3 ">
+                        Our <span className="text-green-500">Roofing</span> Services
                     </h1>
 
                     <div className="flex justify-center">
-                        <hr className="w-[50vw] text-white/30 text-center " />
+                        <hr className="w-[50vw] text-black/30 text-center " />
                     </div>
 
-                    <div className="cards">
-                        <div className="w-[30%]">
-                            <Image className="w-[400px] h-[250px] m-auto" width={300} height={300} alt="Image" src="/Repair4.webp"></Image>
-                            <h1 className="text-white font-semibold text-[25px]">Roof Repairs</h1>
-                            <p className="text-gray-200">Small leaks can turn into expensive damage fast. Our team finds the exact problem, fixes it professionally, and protects your home from future issues. Whether it's missing shingles, water stains, or storm damage, we repair it right the first time so you can relax knowing your roof is safe again.</p>
-                        </div>
+                    <Servicescards />
 
-                    </div>
 
                 </div>
+                <div className="h-[10vh] bg-green-600 flex justify-around items-center mt-10 ">
+                    <h1 className="text-white font-semibold text-[25px]">Get a No-Hassle, Free Estimate Today!</h1>
 
+                    <Link href="/getaquote"><button className="bg-white px-4 py-4 rounded-xl hover:scale-105 transition ease-in-out cursor-pointer ">Get My Free Estimate</button></Link>
+
+                </div>
             </section>
+
+            <section>
+                <h1 className="text-[35px] mt-[50px] font-bold text-center">Check Out Our Team In Action</h1>
+                <p className="w-[60vw] m-auto text-center mt-3">Our team is more than just experts — we’re passionate craftsmen who treat every project like it’s our own home. Every nail, every shingle, every detail reflects our commitment to quality and care. Watch how we bring roofs to life with precision, dedication, and a personal touch that keeps our clients confident and worry-free.</p>
+                <Scrollgallery />
+            </section>
+
+            <section className="flex justify-around mt-[50px] items-center">
+                <div className="left">
+                    <Image className="w-[500px] h-[400px]" width={500} height={500} alt="House" src="/Chooseus.webp"></Image>
+
+                </div>
+                <div className="right">
+                    <h1 className="text-[35px] font-semibold w-[40vw]">Why Work With Peak Shield Roofing?</h1>
+                    <h1 className="mt-4 font-bold text-[15px]">We create roofs that lasts for years.</h1>
+                    <p className="mt-3 w-[50vw]">At Peak Shield Roofing, we don’t just fix roofs — we protect homes, families, and peace of mind. Every project is handled with care, precision, and dedication, ensuring lasting results. Our team combines years of experience with a personal touch, making sure you feel confident, supported, and worry-free from start to finish.</p>
+
+                    <ul className="ml-15 mt-5">
+                        <li className="list-disc marker:text-green-600">Over 10 years of trusted experience</li>
+                        <li className="list-disc marker:text-green-600">15+ certified technicians</li>
+                        <li className="list-disc marker:text-green-600">500+ successful roofing projects completed</li>
+                        <li className="list-disc marker:text-green-600">Transparent pricing with no hidden costs</li>
+                    </ul>
+                                <div className="flex justify-center">
+                <button className="bg-green-600 px-9 py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
+
+            </div>
+                </div>
+            </section>
+
+            <section className="mt-9">
+                <Faqs />
+            </section>
+
+            <section>
+                <h1 className="font-bold text-[35px] text-center">Speak With a <span className="text-green-500">Roofing</span> Specialist Today</h1>
+                <RoofingForm />
+            </section>
+
+</FadeUp>
 
 
 

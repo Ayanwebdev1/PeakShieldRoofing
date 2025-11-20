@@ -10,3 +10,7 @@ export default function Home() {
     
   );
 }
+export const metadata = {
+  title: "Home",
+  description: "This is Home Page",
+};
