@@ -1,25 +1,25 @@
-// import React from "react";
-// import Image from "next/image";
-// import Servicescards from "./Servicescards";
-// import Scrollgallery from "./Scrollonggallery";
-// import Link from "next/link";
-// import Faqs from "./Faqs";
-// import RoofingForm from "./Formspree";
-// import FadeUp from "./FadeUp";
-"use client"
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-
-// Static + safe components
 import Servicescards from "./Servicescards";
-import FadeUp from "./FadeUp"; 
+import Scrollgallery from "./Scrollonggallery";
+import Link from "next/link";
+import Faqs from "./Faqs";
+import RoofingForm from "./Formspree";
+import FadeUp from "./FadeUp";
+// "use client"
+// import React from "react";
+// import Image from "next/image";
+// import Link from "next/link";
 
-// Lazy load heavy components
-import dynamic from "next/dynamic";
-const Scrollgallery = dynamic(() => import("./Scrollonggallery"), { ssr: false });
-const Faqs = dynamic(() => import("./Faqs"), { ssr: false });
-const RoofingForm = dynamic(() => import("./Formspree"), { ssr: false });
+// // Static + safe components
+// import Servicescards from "./Servicescards";
+// import FadeUp from "./FadeUp"; 
+
+// // Lazy load heavy components
+// import dynamic from "next/dynamic";
+// const Scrollgallery = dynamic(() => import("./Scrollonggallery"), { ssr: false });
+// const Faqs = dynamic(() => import("./Faqs"), { ssr: false });
+// const RoofingForm = dynamic(() => import("./Formspree"), { ssr: false });
 const Hero = () => {
     return (
         <>
@@ -30,10 +30,8 @@ const Hero = () => {
                     <Image
                         src="/hero.webp"
                         alt="Roofing Hero"
-                        // fill
-                        width={1920}
-                        height={700}
-                        className="h-[635px] md:h-[610px] object-cover"
+                        fill
+                        className="object-cover"
                         priority
                     />
 
