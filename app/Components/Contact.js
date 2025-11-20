@@ -15,7 +15,7 @@ export default function ContactPage() {
                 <p className="text-[20px] text-center mt-3 w-[90vw] md:w-[60vw] m-auto">Fast responses. Honest answers. Real support</p>
 
             </header>
-            <section className="w-full bg-gray-50 py-20">
+            <section className="w-[96vw] m-auto md:m-0 md:w-full bg-gray-50 py-20">
                 <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6">
 
                     {/* LEFT SIDE → YOUR FORM */}
