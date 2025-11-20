@@ -31,11 +31,11 @@ export default function RoofingForm() {
     return (
         <>
         <ToastContainer />
-        <form 
-            ref={Formref} 
-            onSubmit={handleSubmit} 
-            className="overflow-x-hidden w-[90vw] m-auto md:max-w-md mx-auto p-6 rounded-2xl shadow-[5px_20px_30px_rgba(0,0,0,0.3)] space-y-4 mt-6 mb-8 "
-        >
+<form 
+    ref={Formref} 
+    onSubmit={handleSubmit} 
+    className="overflow-x-hidden w-full max-w-[90vw] md:max-w-md mx-auto p-6 rounded-2xl shadow-[5px_20px_30px_rgba(0,0,0,0.3)] space-y-4 mt-6 mb-8"
+>
             {/* Name */}
             <div className="flex flex-col">
                 <label htmlFor="name" className="font-semibold text-green-500 mb-1">Full Name</label>
