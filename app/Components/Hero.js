@@ -1,11 +1,25 @@
+// import React from "react";
+// import Image from "next/image";
+// import Servicescards from "./Servicescards";
+// import Scrollgallery from "./Scrollonggallery";
+// import Link from "next/link";
+// import Faqs from "./Faqs";
+// import RoofingForm from "./Formspree";
+// import FadeUp from "./FadeUp";
+"use client"
 import React from "react";
 import Image from "next/image";
-import Servicescards from "./Servicescards";
-import Scrollgallery from "./Scrollonggallery";
 import Link from "next/link";
-import Faqs from "./Faqs";
-import RoofingForm from "./Formspree";
-import FadeUp from "./FadeUp";
+
+// Static + safe components
+import Servicescards from "./Servicescards";
+
+// Lazy load heavy components
+import dynamic from "next/dynamic";
+const Scrollgallery = dynamic(() => import("./Scrollonggallery"), { ssr: false });
+const Faqs = dynamic(() => import("./Faqs"), { ssr: false });
+const RoofingForm = dynamic(() => import("./Formspree"), { ssr: false });
+const FadeUp = dynamic(() => import("./FadeUp"), { ssr: false });
 const Hero = () => {
     return (
         <>
@@ -16,8 +30,10 @@ const Hero = () => {
                     <Image
                         src="/hero.webp"
                         alt="Roofing Hero"
-                        fill
-                        className="object-cover"
+                        // fill
+                        width={1920}
+                        height={700}
+                        className="h-[635px] md:h-[610px] object-cover"
                         priority
                     />
 
@@ -31,22 +47,22 @@ const Hero = () => {
                         <p className="text-base sm:text-lg mb-6 drop-shadow-md w-full sm:w-[90%] md:w-[60vw]">
                             Protect your home with a roof that lasts. Our experienced team uses premium materials and expert craftsmanship to ensure every installation provides safety, durability, and peace of mind. We treat every home like our own—because your family deserves nothing less.
                         </p>
-<div className="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto">
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto">
 
-    <a 
-      href="tel:+19283283629"
-      className="bg-green-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto flex justify-center items-center"
-    >
-      Call Now
-    </a>
+                            <a
+                                href="tel:+19283283629"
+                                className="bg-green-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto flex justify-center items-center"
+                            >
+                                Call Now
+                            </a>
 
-    <Link href="/getaquote" className="w-full sm:w-auto">
-        <button className="bg-white cursor-pointer text-black font-semibold px-5 py-2 sm:px-5 sm:py-4 rounded-md hover:bg-gray-200 transition w-full sm:w-auto">
-            Get A Free Quote
-        </button>
-    </Link>
+                            <Link href="/getaquote" className="w-full sm:w-auto">
+                                <button className="bg-white cursor-pointer text-black font-semibold px-5 py-2 sm:px-5 sm:py-4 rounded-md hover:bg-gray-200 transition w-full sm:w-auto">
+                                    Get A Free Quote
+                                </button>
+                            </Link>
 
-</div>
+                        </div>
 
 
                     </div>
@@ -123,28 +139,7 @@ const Hero = () => {
                     <Scrollgallery />
                 </section>
 
-                {/* <section className="flex justify-around mt-[50px] items-center">
-                    <div className="left">
-                        <Image className="w-[500px] h-[400px]" width={500} height={500} alt="House" src="/Chooseus.webp"></Image>
 
-                    </div>
-                    <div className="right">
-                        <h1 className="text-[35px] font-semibold w-[40vw]">Why Work With Peak Shield Roofing?</h1>
-                        <h1 className="mt-4 font-bold text-[15px]">We create roofs that lasts for years.</h1>
-                        <p className="mt-3 w-[50vw]">At Peak Shield Roofing, we don’t just fix roofs — we protect homes, families, and peace of mind. Every project is handled with care, precision, and dedication, ensuring lasting results. Our team combines years of experience with a personal touch, making sure you feel confident, supported, and worry-free from start to finish.</p>
-
-                        <ul className="ml-15 mt-5">
-                            <li className="list-disc marker:text-green-600">Over 10 years of trusted experience</li>
-                            <li className="list-disc marker:text-green-600">15+ certified technicians</li>
-                            <li className="list-disc marker:text-green-600">500+ successful roofing projects completed</li>
-                            <li className="list-disc marker:text-green-600">Transparent pricing with no hidden costs</li>
-                        </ul>
-                        <div className="flex justify-center">
-                            <button className="bg-green-600 px-9 py-4 rounded-xl text-white font-semibold mt-4 hover:scale-105 transition ease-in-out cursor-pointer"><a href="tel:+19283283629">Call Now</a></button>
-
-                        </div>
-                    </div>
-                </section> */}
                 <section className="flex flex-col md:flex-row justify-center md:justify-around items-center mt-12 px-5 md:px-10 gap-8">
                     {/* Left Image */}
                     <div className="left flex-shrink-0">
@@ -195,18 +190,6 @@ const Hero = () => {
                 </section>
 
             </FadeUp>
-
-
-
-
-
-
-
-
-
-
-
-
 
         </>
     );
