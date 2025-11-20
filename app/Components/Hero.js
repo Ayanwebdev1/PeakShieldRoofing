@@ -31,17 +31,24 @@ const Hero = () => {
                         <p className="text-base sm:text-lg mb-6 drop-shadow-md w-full sm:w-[90%] md:w-[60vw]">
                             Protect your home with a roof that lasts. Our experienced team uses premium materials and expert craftsmanship to ensure every installation provides safety, durability, and peace of mind. We treat every home like our own—because your family deserves nothing less.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto">
-                            <button className="bg-green-600 cursor-pointer text-white font-semibold px-5 py-2 sm:px-5 sm:py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto">
-                                <a href="tel:+19283283629">Call Now</a>
-                            </button>
+<div className="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto">
 
-                            <Link href="/getaquote">
-                                <button className="bg-white cursor-pointer text-black font-semibold px-5 py-2 sm:px-5 sm:py-4 rounded-md hover:bg-gray-200 transition w-full sm:w-auto">
-                                    Get A Free Quote
-                                </button>
-                            </Link>
-                        </div>
+    <a 
+      href="tel:+19283283629"
+      className="bg-green-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto flex justify-center items-center"
+    >
+      Call Now
+    </a>
+
+    <Link href="/getaquote" className="w-full sm:w-auto">
+        <button className="bg-white cursor-pointer text-black font-semibold px-5 py-2 sm:px-5 sm:py-4 rounded-md hover:bg-gray-200 transition w-full sm:w-auto">
+            Get A Free Quote
+        </button>
+    </Link>
+
+</div>
+
+
                     </div>
 
 
