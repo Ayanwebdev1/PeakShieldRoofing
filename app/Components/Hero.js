@@ -6,28 +6,14 @@ import Link from "next/link";
 import Faqs from "./Faqs";
 import RoofingForm from "./Formspree";
 import FadeUp from "./FadeUp";
-// "use client"
-// import React from "react";
-// import Image from "next/image";
-// import Link from "next/link";
 
-// // Static + safe components
-// import Servicescards from "./Servicescards";
-// import FadeUp from "./FadeUp"; 
-
-// // Lazy load heavy components
-// import dynamic from "next/dynamic";
-// const Scrollgallery = dynamic(() => import("./Scrollonggallery"), { ssr: false });
-// const Faqs = dynamic(() => import("./Faqs"), { ssr: false });
-// const RoofingForm = dynamic(() => import("./Formspree"), { ssr: false });
 const Hero = () => {
     return (
         <>
 
             <header className="relative w-full h-[95vh]">
 
-
-                {/* <Image
+                 {/* <Image
                         src="/hero3.webp"
                         alt="Roofing Hero"
                         // fill
@@ -35,7 +21,17 @@ const Hero = () => {
                         width={1200}
                         className="w-full h-[95vh] object-cover"
                         priority
-                    /> */}
+                    />  */}
+
+                <Image
+                    src="/hero3.webp"
+                    alt="Roofing Hero"
+                    fill
+                    className="object-cover"
+                    priority
+
+                    sizes="100vw"
+                />
 
                 {/* <Image
                     src="/hero3.webp"
@@ -49,19 +45,7 @@ const Hero = () => {
          100vw"
                 /> */}
 
-                <div className="relative w-full h-[95vh]">
-                    <Image
-                        src="/hero3.webp"              // .webp already best format
-                        alt="Roofing Hero"
-                        fill                           // ye sabse important hai hero ke liye
-                        className="object-cover"
-                        priority                       // LCP image hai to priority=true
-                        quality={75}                   // default 75 hi rehta hai, optional
-                        placeholder="blur"             // optional but nice UX
-                        blurDataURL="data:image/webp;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAABQAAQUxQSAIAAAAEAO..." // ya automatically generate ho jayega agar image static ho
-                        sizes="100vw"                  // hero full width hai almost har device pe
-                    />
-                </div>
+
 
 
 
