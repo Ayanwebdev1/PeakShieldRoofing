@@ -37,7 +37,7 @@ const Hero = () => {
                         priority
                     /> */}
 
-                <Image
+                {/* <Image
                     src="/hero3.webp"
                     alt="Roofing Hero"
                     height={2000} // original image
@@ -47,11 +47,25 @@ const Hero = () => {
                     sizes="(max-width: 640px) 100vw,
          (max-width: 768px) 100vw,
          100vw"
-                />
+                /> */}
+
+                <div className="relative w-full h-[95vh]">
+                    <Image
+                        src="/hero3.webp"              // .webp already best format
+                        alt="Roofing Hero"
+                        fill                           // ye sabse important hai hero ke liye
+                        className="object-cover"
+                        priority                       // LCP image hai to priority=true
+                        quality={75}                   // default 75 hi rehta hai, optional
+                        placeholder="blur"             // optional but nice UX
+                        blurDataURL="data:image/webp;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAABQAAQUxQSAIAAAAEAO..." // ya automatically generate ho jayega agar image static ho
+                        sizes="100vw"                  // hero full width hai almost har device pe
+                    />
+                </div>
 
 
 
-                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute h-[95vh] inset-0 bg-black/40"></div>
 
                 <div className="absolute inset-0 mt-5 flex flex-col md:items-start justify-center px-5 sm:px-10 md:px-20 text-white">
                     <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg w-full sm:w-[80%] md:w-[50vw]">
