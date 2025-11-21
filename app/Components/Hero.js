@@ -13,7 +13,7 @@ const Hero = () => {
 
             <header className="relative w-full h-[95vh]">
 
-                 {/* <Image
+                {/* <Image
                         src="/hero3.webp"
                         alt="Roofing Hero"
                         // fill
@@ -29,7 +29,7 @@ const Hero = () => {
                     fill
                     className="object-cover"
                     priority
-
+                    fetchPriority="high"
                     sizes="100vw"
                 />
 
