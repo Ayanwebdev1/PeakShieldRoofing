@@ -86,42 +86,52 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white w-full shadow-lg absolute top-[120px] left-0 z-40">
-            <ul className="flex flex-col gap-6 px-5 py-6 text-gray-700 font-semibold">
-              {navLinks.map(([name, link]) => (
-                <Link key={name} href={link} onClick={() => setIsOpen(false)}>
-                  <li
-                    className={`cursor-pointer transition px-3 py-1 rounded-md ${
-                      pathname === link ? "bg-green-600 text-white" : "hover:bg-green-100"
-                    }`}
-                  >
-                    {name}
-                  </li>
-                </Link>
-              ))}
+  <div className="md:hidden fixed top-0 right-0 z-50 bg-white w-[80%] max-w-[300px] h-full shadow-lg overflow-auto">
+    
+    {/* Close Button */}
+    <div className="flex justify-end p-4">
+      <button
+        onClick={() => setIsOpen(false)}
+        className="text-gray-700 hover:text-green-600"
+      >
+        <X size={28} />
+      </button>
+    </div>
 
-              {/* Socials in mobile */}
-              <div className="flex items-center gap-3 mt-4">
-                <a href="https://www.tiktok.com/" target="_blank" className="h-8 w-8 border hover:bg-green-500 cursor-pointer border-gray-400 rounded-md flex items-center justify-center hover:border-green-600 transition p-1">
-                  <Image src="/Tiktok.webp" alt="TikTok" width={20} height={20} className="object-contain" />
-                </a>
+    {/* Menu Items */}
+    <ul className="flex flex-col gap-4 px-5 py-2 text-gray-700 font-semibold">
+      {navLinks.map(([name, link]) => (
+        <Link key={name} href={link} onClick={() => setIsOpen(false)}>
+          <li
+            className={`cursor-pointer transition px-3 py-2 rounded-md ${
+              pathname === link ? "bg-green-600 text-white" : "hover:bg-green-100"
+            }`}
+          >
+            {name}
+          </li>
+        </Link>
+      ))}
 
-                <a href="https://www.facebook.com/" target="_blank" className="h-8 w-8 cursor-pointer hover:bg-green-500 border border-gray-400 rounded-md flex items-center justify-center hover:border-green-600 transition p-1">
-                  <Image src="/Facebook.webp" alt="Facebook" width={20} height={20} className="object-contain" />
-                </a>
+      {/* Socials */}
+      <div className="flex items-center gap-3 mt-4 justify-start">
+        <a href="https://www.tiktok.com/" target="_blank" className="h-8 w-8 border hover:bg-green-500 cursor-pointer border-gray-400 rounded-md flex items-center justify-center hover:border-green-600 transition p-1">
+          <Image src="/Tiktok.webp" alt="TikTok" width={20} height={20} className="object-contain" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" className="h-8 w-8 cursor-pointer hover:bg-green-500 border border-gray-400 rounded-md flex items-center justify-center hover:border-green-600 transition p-1">
+          <Image src="/Facebook.webp" alt="Facebook" width={20} height={20} className="object-contain" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" className="h-8 w-8 border cursor-pointer border-gray-400 rounded-md flex items-center justify-center hover:bg-green-500 hover:border-green-600 transition p-1">
+          <Image src="/Insta.webp" alt="Instagram" width={20} height={20} className="object-contain" />
+        </a>
+      </div>
 
-                <a href="https://www.instagram.com/" target="_blank" className="h-8 w-8 border cursor-pointer border-gray-400 rounded-md flex items-center justify-center hover:bg-green-500 hover:border-green-600 transition p-1">
-                  <Image src="/Insta.webp" alt="Instagram" width={20} height={20} className="object-contain" />
-                </a>
-              </div>
-
-              {/* Call Now Button */}
-              <button className="bg-green-600 cursor-pointer text-white font-semibold px-5 py-2 rounded-md hover:bg-green-700 transition mt-4 w-full">
-                <a href="tel:+19283283629">Call Now</a>
-              </button>
-            </ul>
-          </div>
-        )}
+      {/* Call Now Button */}
+      <button className="bg-green-600 cursor-pointer text-white font-semibold px-5 py-2 rounded-md hover:bg-green-700 transition mt-4 w-full">
+        <a href="tel:+19283283629">Call Now</a>
+      </button>
+    </ul>
+  </div>
+)}
       
     </>
   );
