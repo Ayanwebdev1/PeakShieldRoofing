@@ -23,11 +23,11 @@ import FadeUp from "./FadeUp";
 const Hero = () => {
     return (
         <>
-            
-                <header className="relative w-full h-[95vh]">
 
-                    {/* Hero Image */}
-                    <Image
+            <header className="relative w-full h-[95vh]">
+
+
+                {/* <Image
                         src="/hero3.webp"
                         alt="Roofing Hero"
                         // fill
@@ -35,45 +35,58 @@ const Hero = () => {
                         width={1200}
                         className="w-full h-[95vh] object-cover"
                         priority
-                    />
+                    /> */}
 
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/40"></div>
+                <Image
+                    src="/hero3.webp"
+                    alt="Roofing Hero"
+                    height={2000} // original image
+                    width={1200}
+                    className="w-full h-[95vh] object-cover"
+                    priority
+                    sizes="(max-width: 640px) 100vw,
+         (max-width: 768px) 100vw,
+         100vw"
+                />
 
-                    <div className="absolute inset-0 mt-5 flex flex-col md:items-start justify-center px-5 sm:px-10 md:px-20 text-white">
-                        <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg w-full sm:w-[80%] md:w-[50vw]">
-                            Trusted Roofing Experts Protecting What Matters Most
-                        </h1>
-                        <p className="text-base sm:text-lg mb-6 drop-shadow-md w-full sm:w-[90%] md:w-[60vw]">
-                            Protect your home with a roof that lasts. Our experienced team uses premium materials and expert craftsmanship to ensure every installation provides safety, durability, and peace of mind. We treat every home like our own—because your family deserves nothing less.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto">
 
-                            <a
-                                href="tel:+19283283629"
-                                className="bg-green-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto flex justify-center items-center"
-                            >
-                                Call Now
-                            </a>
 
-                            <Link href="/getaquote" className="w-full sm:w-auto">
-                                <button className="bg-white cursor-pointer text-black font-semibold px-5 py-2 sm:px-5 sm:py-4 rounded-md hover:bg-gray-200 transition w-full sm:w-auto">
-                                    Get A Free Quote
-                                </button>
-                            </Link>
+                <div className="absolute inset-0 bg-black/40"></div>
 
-                        </div>
+                <div className="absolute inset-0 mt-5 flex flex-col md:items-start justify-center px-5 sm:px-10 md:px-20 text-white">
+                    <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg w-full sm:w-[80%] md:w-[50vw]">
+                        Trusted Roofing Experts Protecting What Matters Most
+                    </h1>
+                    <p className="text-base sm:text-lg mb-6 drop-shadow-md w-full sm:w-[90%] md:w-[60vw]">
+                        Protect your home with a roof that lasts. Our experienced team uses premium materials and expert craftsmanship to ensure every installation provides safety, durability, and peace of mind. We treat every home like our own—because your family deserves nothing less.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full sm:w-auto">
 
+                        <a
+                            href="tel:+19283283629"
+                            className="bg-green-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-green-700 transition w-full sm:w-auto flex justify-center items-center"
+                        >
+                            Call Now
+                        </a>
+
+                        <Link href="/getaquote" className="w-full sm:w-auto">
+                            <button className="bg-white cursor-pointer text-black font-semibold px-5 py-2 sm:px-5 sm:py-4 rounded-md hover:bg-gray-200 transition w-full sm:w-auto">
+                                Get A Free Quote
+                            </button>
+                        </Link>
 
                     </div>
 
 
-                    {/* Background fallback */}
-                    <div className="absolute inset-0 bg-gray-200 -z-10"></div>
+                </div>
 
-                </header>
 
-<FadeUp>
+                {/* Background fallback */}
+                <div className="absolute inset-0 bg-gray-200 -z-10"></div>
+
+            </header>
+
+            <FadeUp>
                 <section>
                     <div className="flex flex-col md:flex-row items-center px-5 md:px-20 py-10">
 
