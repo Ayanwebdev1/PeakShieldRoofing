@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <FadeUp>
+      
         <div className="w-full h-2 bg-green-600 "></div>
 
         <nav className="bg-white sticky top-0 z-50 border-gray-200 shadow h-[120px] flex items-center justify-between px-10">
@@ -122,7 +122,7 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-      </FadeUp>
+      
     </>
   );
 };

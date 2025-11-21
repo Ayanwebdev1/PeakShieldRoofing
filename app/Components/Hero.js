@@ -23,7 +23,7 @@ import FadeUp from "./FadeUp";
 const Hero = () => {
     return (
         <>
-            <FadeUp>
+            
                 <header className="relative w-full h-[95vh]">
 
                     {/* Hero Image */}
@@ -73,7 +73,7 @@ const Hero = () => {
 
                 </header>
 
-
+<FadeUp>
                 <section>
                     <div className="flex flex-col md:flex-row items-center px-5 md:px-20 py-10">
 

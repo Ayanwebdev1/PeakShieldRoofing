@@ -7,7 +7,7 @@ import FadeUp from './FadeUp'
 const About = () => {
     return (
         <>
-        <FadeUp>
+        
             <header className="relative w-full h-[95vh]">
                 {/* Hero Image */}
                 <Image
@@ -35,7 +35,7 @@ const About = () => {
                     </div>
                 </div>
             </header>
-
+<FadeUp>
             <section>
                 <h1 className='text-[35px] font-bold text-center mt-[50px]'>About <span className='text-green-500 '>Peak</span> Shield Roofing</h1>
                 <p className='w-[90vw] md:w-[60vw] text-center m-auto mt-5'>At Peak Shield Roofing, we believe a roof isn’t just a structure — it’s security, comfort, and peace of mind for the people who live under it. That’s why our work has always been personal. Since day one, our mission has been simple: <span className='font-semibold'>protect every home as if it were our own.</span>

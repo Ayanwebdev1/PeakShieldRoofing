@@ -9,7 +9,7 @@ import FadeUp from './FadeUp'
 const Project = () => {
     return (
         <>
-        <FadeUp>
+        
             <header>
                 <div className="relative w-full h-[90vh]">
                     {/* Hero Image */}
@@ -44,6 +44,8 @@ const Project = () => {
                 </div>
 
             </header>
+
+            <FadeUp>
 
             <section className='mt-[50px]'>
                 <h1 className='text-[35px] text-center font-bold'>Transformations That <span className='text-green-500'>Speak</span> for Themselves</h1>
